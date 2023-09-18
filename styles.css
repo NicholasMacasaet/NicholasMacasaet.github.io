@@ -1,0 +1,251 @@
+:root{
+    --main-darkpurple: #110053;
+    --main-lightpurple: #5840EC;
+    --main-blue: #2000A1;
+    --main-gray: #303841;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  
+  body{
+    font-family: Helvetica;
+    background-color: var(--main-darkpurple);
+  }
+  
+  ul{
+    list-style:none;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+  #navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-blue);
+    
+  }
+  .menu-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu-list a {
+    /*font-size: 2.2rem;*/
+    padding: 0 20px 0 20px;
+    color: white;
+    font-size: min(5vw, 30px);
+  }
+  
+  .menu-list a:hover {
+    background: var(--main-lightpurple);
+  }
+  
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+  }
+  
+  h2{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  p{
+    color: var(--main-lightpurple);
+    font-size: 2rem;
+    font-style: italic;
+  }
+  
+  #welcome-section {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: wrap;
+    height: 40vh;
+    background-color: var(--main-purple);
+    color: white;
+    
+    max-height: 500px;
+    padding-bottom: 20px;
+    
+  }
+  .hiitsme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  
+  .me-title{
+    font-size: min(5vw, 75px);
+    max-height: 75%
+  
+  }
+  .me-desc{
+    /*height: calc(80% - 2rem);*/
+    font-size: min(2.9vw, 40px);
+    max-height: 75%
+  
+  }
+  
+  .me-headshot{
+    width: min(500px,calc(100% - 1rem));
+    max-width: 100%;
+    max-height: 80%;
+    float: left;
+    padding: 0px 10px 0 10px;
+  }
+  
+  .headshot-container{
+    max-height:100vh;
+    overflow:hidden;
+    padding: 0 10px 0 10px;
+   
+    width: 60%;
+  }
+  
+  #education{
+    background-color: var(--main-lightpurple);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-evenly;
+    flex: wrap;
+    color: white;
+    
+  
+  }
+  .section-container{
+    width: 100%;
+    
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .education-bio{
+    width:100%;
+    border: 2px solid var(--main-darkpurple);
+    height: 20vh;
+    overflow-y: scroll;
+  }
+  .desc{
+    color: white;
+  }
+  .edulist{
+    font-size:min(2.9vw, 30px);
+    list-style:circle;
+  }
+  .school-pic{
+    float:right;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .image-wrapper-right{
+    width: 40%;
+    height: 100%;
+    float: right;
+    top: 50%;
+    right: 50%;
+    object-fit: cover;
+  }
+  
+  #skills{
+    background-color: var(--main-lightpurple);
+    padding: 10px auto;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-evenly;
+    flex: wrap;
+    height: 40vh;
+    color: white;
+   
+    max-height: 500px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .project-title{
+    color: white;
+  }
+  
+  
+  #projects{
+    background-color: var(--main-lightpurple);
+    padding: 10px auto;
+    border-radius: 10px;
+  }
+  #project-header{
+    padding: 20px;
+  }
+  
+  #projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .project-tile{
+    font-size: 1rem;
+    padding: 2rem 0.5rem;
+    background: var(--main-blue);
+    height: 75%;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .project-image{
+    height: calc(80% - 2rem);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  }
+  
+  .project-tile:hover .project-title{
+    color: #aed900;
+  }
+  
+  .project-tile:visited .project-title{
+    color: #ffffe4;
+  }
+  
+  
+  .socials {
+    display: flex;
+    flex-direction: row;
+    font-size: min(3vw,40px);
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+  }
+  
+  
+  
+  .links{
+    color: var(--main-lightpurple);
+  }
+  
+  .links:hover{
+    color: white;
+  }
+  
+  .links:visited{
+    color: #aed900;
+  }
+  
